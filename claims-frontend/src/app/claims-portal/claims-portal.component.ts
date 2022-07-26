@@ -1,15 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-claims-portal',
+  selector: 'app-claims',
   templateUrl: './claims-portal.component.html',
-  styleUrls: ['./claims-portal.component.css']
 })
-export class ClaimsPortalComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class ClaimsPortalComponent {}

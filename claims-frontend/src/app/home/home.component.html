@@ -1,1 +1,156 @@
-<p>home works!</p>
+<div class="container">
+    <div class="header__title">
+      <div class="row">
+        <div class="col-xs-6">
+          <h1>
+            Claims Management
+            <br />
+            <span class="highlight">made easy</span>
+          </h1>
+          <h4>A System for better and efficient management of claims.</h4>
+          <button class="btn--text" (click)="onScrollTo(target)">
+            Learn more &DownArrow;
+          </button>
+        </div>
+        <div class="col-xs-6 offset-md-2">
+          <img
+            src="../../assets/img/1.png"
+            class="header__img"
+            alt="svg image"
+          />
+        </div>
+      </div>
+    </div>
+  
+    <hr />
+  
+    <div class="section margin-section" id="section--1" #target>
+      <div class="row">
+        <div class="col-xs-12 offset-md-2">
+          <div class="section__title">
+            <h2 class="section__description">Features</h2>
+            <h3 class="section__header">
+              Managing claims now made easier.
+            </h3>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row justify-content-end">
+        <div class="col-xs-6 col-md-6">
+          <img
+            src="../../assets/img/2.jpg"
+            data-src="../../assets/img/digital.jpg"
+            alt="Computer"
+            class="features__img lazy-img"
+          />
+        </div>
+  
+        <div class="col-xs-6 col-md-6 d-flex justify-content-center">
+          <div class="features__feature">
+            <div class="features__icon">
+              <svg>
+                <use xlink:href="../../assets/img/icons.svg#icon-monitor"></use>
+              </svg>
+            </div>
+            <h5 class="features__header">Easy to use</h5>
+            <p>
+              Claims Management System manages all aspects of claims, which includes getting claim status, verification 
+              and functioning to view bills, submit claims, view claim status and other functionalities.
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row justify-content-end margin-grid-row">
+        <div class="col-xs-6 col-md-6 justify-content-center d-flex">
+          <div class="features__feature">
+            <div class="features__icon">
+              <svg>
+                <use
+                  xlink:href="../../assets/img/icons.svg#icon-credit-card"
+                ></use>
+              </svg>
+            </div>
+            <h5 class="features__header">View all your claims</h5>
+            <p>
+              View all your claims with specific claim ID after authorization to check the eligibility of
+              the member and to set the claim for processing.
+            </p>
+          </div>
+        </div>
+  
+        <div class="col-xs-6 col-md-6">
+          <img
+            src="../../assets/img/3.jpg"
+            data-src="../../assets/img/digital.jpg"
+            alt="Computer"
+            class="features__img lazy-img"
+          />
+        </div>
+      </div>
+  
+      <div class="row justify-content-end margin-grid-row">
+        <div class="col-xs-6 col-md-6">
+          <img
+            src="../../assets/img/4.png"
+            alt="Computer"
+            class="features__img lazy-img"
+          />
+        </div>
+  
+        <div class="col-xs-6 col-md-6 justify-content-center d-flex">
+          <div class="features__feature">
+            <div class="features__icon">
+              <svg>
+                <use
+                  xlink:href="../../assets/img/icons.svg#icon-trending-up"
+                ></use>
+              </svg>
+            </div>
+            <h5 class="features__header">Track you claim status</h5>
+            <p>
+              Check the claim status if the claimed amount and benefits are available under subscribed policy to
+              see if your claim was accepted or rejectd.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="footer">
+    <!-- <ul class="footer__nav">
+      <li class="footer__item">
+        <a class="footer__link" href="#">About</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Pricing</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Terms of Use</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Privacy Policy</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Careers</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Blog</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">Contact Us</a>
+      </li>
+    </ul> -->
+    <div class="logo">
+      <a routerLink="/home"
+        ><img
+          src="../../assets/img/logo.jpeg"
+          class="brand-logo"
+          alt="brand logo"
+      /></a>
+    </div>
+    <p class="footer__copyright">&copy;All rights reserved.</p>
+  </footer>
+  
