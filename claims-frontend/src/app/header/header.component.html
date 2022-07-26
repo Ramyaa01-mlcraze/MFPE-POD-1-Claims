@@ -4,18 +4,17 @@
     >
       <a class="navbar-brand" routerLink="home"
         ><img
-          src="../../assets/img/logo.jpeg"
+          src="../../assets/img/logo.png"
           class="brand-logo"
-          alt="brand logo"
-        />PureClaim</a
+          alt="Euclid logo"/>CLAIMExpert</a
       >
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav nav-items">
           <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" routerLink="home">Home</a>
+            <a class="nav-link" routerLink="home" style="color: black; font-weight:bold">Home</a>
           </li>
           <li class="nav-item" routerLinkActive="active" *ngIf="!isAuthenticated">
-            <a class="nav-link" routerLink="auth">Login</a>
+            <a class="nav-link" routerLink="auth" style="color: black; font-weight:bold">Sign in</a>
           </li>
   
           <div class="dropdown" routerLinkActive="active" *ngIf="isAuthenticated">
@@ -35,7 +34,7 @@
                 <li [routerLink]="[username, 'submitClaim']">
                   <a>Submit Claim</a>
                 </li>
-                <li (click)="onLogout()"><a>Logout</a></li>
+                <li (click)="onLogout()"><a>Sign out</a></li>
               </ul>
             </div>
           </div>

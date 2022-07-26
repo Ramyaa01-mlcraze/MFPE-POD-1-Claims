@@ -9,7 +9,7 @@
           </div>
     
           <form (ngSubmit)="onSubmit(f)" #f="ngForm" *ngIf="!isValidating" class="form">
-            <div class="heading"><h2 class="highlight">Login Portal</h2></div>
+            <div class="heading"><h2 class="highlight">Sign In Portal</h2></div>
     
             <div class="form-group">
               <label for="username">Username</label>
@@ -17,13 +17,15 @@
                 type="text"
                 class="form-control"
                 name="username"
-                placeholder="Enter username"
+                placeholder="Enter Username"
                 ngModel
-                required
+                required minlength="3"
                 #username="ngModel"
               />
               <span *ngIf="username.touched && !username.valid" style="color: red"
-                >Please enter username</span
+                >Please enter username </span>
+              <span *ngIf="username.errors?.['minlength']" style="color: red"
+                >Username must be atleast 3 characters long</span
               >
             </div>
             <div class="form-group">
@@ -31,18 +33,24 @@
               <input
                 type="password"
                 class="form-control"
-                placeholder="Password"
+                placeholder="Enter Password"
                 name="password"
                 ngModel
-                required
+                required minlength="5" maxlength="10"
                 #password="ngModel"
               />
               <span *ngIf="!password.valid && password.touched" style="color: red"
                 >Please enter password</span
               >
+              <span *ngIf="password.errors?.['minlength']" style="color: red"
+                >Password must be atleast a length of 5 characters</span
+              >
+            <span *ngIf="password.errors?.['maxlength']" style="color: red"
+              >Password must be atmost a length of 10 characters</span
+            >
             </div>
-            <button type="submit" class="btn btn-primary" [disabled]="!f.valid">
-              Login &rarr;
+            <button type="submit" style="background-color: blue;" class="btn btn-primary" [disabled]="!f.valid">
+              Sign In &rarr;
             </button>
           </form>
     
@@ -52,7 +60,7 @@
             (close)="handleError()"
           ></app-alert>
         </div></div>
-        <div class="main" style="flex:1;"><img src=".././assets/img/loginImage.jpg" /></div>
+        <div class="main" style="flex:1;"><img src=".././assets/img/login-image.jpg" /></div>
       </div>
       
     </div>
