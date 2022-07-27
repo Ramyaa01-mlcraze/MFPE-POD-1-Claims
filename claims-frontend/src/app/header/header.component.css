@@ -119,7 +119,7 @@ a {
 }
 
 .projects li:hover {
-  background-color: lightgray;
+  background-color: rgb(203, 203, 203);
   cursor: pointer;
 }
 
