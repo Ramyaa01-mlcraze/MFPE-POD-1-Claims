@@ -23,10 +23,10 @@ public class AuthorizationApplication implements CommandLineRunner{
 	
 	@Override
 	public void run(String... args) throws Exception{
-		AuthenticationRequest user1 = new AuthenticationRequest("Deekshith","Deekshith01");
-		AuthenticationRequest user2 = new AuthenticationRequest("Ambuj","Ambuj01");
-		AuthenticationRequest user3 = new AuthenticationRequest("Karthika","Karthika01");
-		AuthenticationRequest user4 = new AuthenticationRequest("Pratik","Pratik01");
+		AuthenticationRequest user1 = new AuthenticationRequest("Ramyaa","Ramyaa01");
+		AuthenticationRequest user2 = new AuthenticationRequest("Riya","Riya01");
+		AuthenticationRequest user3 = new AuthenticationRequest("Samkit","Samkit01");
+		AuthenticationRequest user4 = new AuthenticationRequest("Sayan","Sayan01");
 		
 		authRequestRepo.save(user1);
 		authRequestRepo.save(user2);
