@@ -16,12 +16,16 @@
             name="memberId"
             placeholder="Enter member id"
             ngModel
-            required
+            required minlength="4" maxlength="4" 
             #memberId="ngModel"
           />
           <span *ngIf="memberId.touched && !memberId.valid" style="color: red"
-            >Please enter member ID</span
-          >
+            >Please enter member ID and contains only alphanumeric values</span
+          ><span *ngIf="memberId.errors?.['maxlength']" style="color: red"
+          > Member ID must be only a length of 4 characters.</span>
+          <span *ngIf="memberId.errors?.['minlength']" style="color: red"
+          > Member ID must be a length of 4 characters.</span>
+
         </div>
         <div class="col-xs-6 col-md-6 row__content">
           <label for="policyID">Policy Name</label>
@@ -98,7 +102,7 @@
             placeholder="Enter remarks"
             name="remarks"
             ngModel
-            required
+            required 
             #remarks="ngModel"
           />
           <span *ngIf="!remarks.valid && remarks.touched" style="color: red"
@@ -119,7 +123,7 @@
           <span
             *ngIf="!claimAmount.valid && claimAmount.touched"
             style="color: red"
-            >Please enter claim Amount</span
+            >Please enter claimed Amount</span
           >
         </div>
       </div>

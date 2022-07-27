@@ -23,14 +23,18 @@
               type="text"
               class="form-control"
               name="memberID"
-              placeholder="Enter member id"
+              placeholder="Enter member ID"
               ngModel
-              required
+              required minlength="4" maxlength="4" 
               #memberID="ngModel"
             />
             <span *ngIf="memberID.touched && !memberID.valid" style="color: red"
-              >Please enter member ID</span
+              >Please enter member ID and it contains alphanumeric values</span
             >
+            <span *ngIf="memberID.errors?.['maxlength']" style="color: red"
+              > Member ID must be only a length of 4 characters.</span>
+              <span *ngIf="memberID.errors?.['minlength']" style="color: red"
+              > Member ID must be a length of 4 characters.</span>
           </div>
   
           <!-- Claim Status Mode -->
@@ -42,12 +46,18 @@
               placeholder="Enter claim id"
               name="claimID"
               ngModel
-              required
+              required maxlength="4" pattern="/^[A-Za-z0-9]*$/" minlength="4"
               #claimID="ngModel"
             />
             <span *ngIf="!claimID.valid && claimID.touched" style="color: red"
-              >Please enter Claim ID</span
+              >Please enter Claim ID.</span
             >
+            <span *ngIf="claimID.errors?.['maxlength']" style="color: red"
+              > Claim ID must be atmost a length of 4 characters.</span>
+              <span *ngIf="claimID.errors?.['minlength']" style="color: red"
+              > Claim ID must be a length of 4 characters.</span>
+              <span *ngIf="claimID.errors?.['pattern']" style="color: red"
+              > Claim ID accepts only alphanumerical values.</span>
           </div>
   
           <button type="submit" class="btn btn-primary" [disabled]="!f.valid">
