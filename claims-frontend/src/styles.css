@@ -10,6 +10,7 @@ html {
     padding: 0 30px;
     position: relative;
     color: black !important;
+    overflow-x: hidden;
   }
   
   .heading {

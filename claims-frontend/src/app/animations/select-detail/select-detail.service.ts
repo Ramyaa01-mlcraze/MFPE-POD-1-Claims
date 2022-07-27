@@ -58,17 +58,17 @@ export class SelectDetailService {
   public policyDetails: Array<PoilcyDetail> = [
     { 
       id: 'P1001', 
-      name: 'Euclid Plus Classic' 
+      name: 'CLAIMExpert Plus Classic' 
     },
 
     { 
       id: 'P1002', 
-      name: 'Euclid Plus Enhanced' 
+      name: 'CLAIMExpert Plus Enhanced' 
     },
 
     { 
       id: 'P1003', 
-      name: 'Euclid Plus Premium' 
+      name: 'CLAIMExpert Plus Premium' 
     },
   ];
 
