@@ -6,13 +6,13 @@ nav {
 
 .nav-items {
   margin-left: auto;
-  color: blue;
+  color: black;
 }
 
 .nav-item {
   margin-right: 80px;
   border-bottom: 2px solid transparent;
-  color: blue;
+  color: black;
 }
 
 .user {
@@ -119,7 +119,7 @@ a {
 }
 
 .projects li:hover {
-  background-color: rgb(203, 203, 203);
+  background-image: linear-gradient(#3995ffdd, #5823f5);
   cursor: pointer;
 }
 
