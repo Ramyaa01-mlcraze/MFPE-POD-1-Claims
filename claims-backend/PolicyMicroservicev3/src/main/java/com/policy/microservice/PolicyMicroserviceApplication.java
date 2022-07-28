@@ -45,16 +45,16 @@ public class PolicyMicroserviceApplication implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception{
 				
-		Policy policy1 = new Policy("P1001","Health Plus Classic",500000,15639);
-		Policy policy2 = new Policy("P1002","Health Plus Enhanced",3000000,17361);
-		Policy policy3 = new Policy("P1003","Health Plus Premium",10000000,22085);
+		Policy policy1 = new Policy("P1001","CLAIMExpert Plus Classic",500000,15639);
+		Policy policy2 = new Policy("P1002","CLAIMExpert Plus Enhanced",3000000,17361);
+		Policy policy3 = new Policy("P1003","CLAIMExpert Plus Premium",10000000,22085);
 		
 		Hospital hospital1 = new Hospital("H1","Apollo Hospital","Delhi-Indraprastha");
-		Hospital hospital2 = new Hospital("H2","Artemis Hospital","Gurgaon");
-		Hospital hospital3 = new Hospital("H3","Fortis Escorts Heart Institute","Delhi-Okhla");
-		Hospital hospital4 = new Hospital("H4","BLK Super Speciality Hospital","Delhi-New Delhi");
-		Hospital hospital5 = new Hospital("H5","Max Superspecialty Hospital, Saket","Delhi-New Delhi");
-		Hospital hospital6 = new Hospital("H6","Fortis Memorial Research Institute","Gurgaon");
+		Hospital hospital2 = new Hospital("H2","Chettinad Global City","Chennai-OMR");
+		Hospital hospital3 = new Hospital("H3","Ohio Hospital","Kolkata-Newtown");
+		Hospital hospital4 = new Hospital("H4","MIOT Hospital","Chennai-Ramapuram");
+		Hospital hospital5 = new Hospital("H5","Lotus Hospital","Kolkata-Rajarhat");
+		Hospital hospital6 = new Hospital("H6","Agarwal Hospital","Madhya Pradesh-Bhopal");
 		
 		policy1.getHospitals().add(hospital5);
 		policy1.getHospitals().add(hospital1);
@@ -76,12 +76,12 @@ public class PolicyMicroserviceApplication implements CommandLineRunner{
 		
 		Benefits b1 = new Benefits("B101","Coverage for COVID-19");
 		Benefits b2 = new Benefits("B102","Coverage for hospitalization at home");
-		Benefits b3 = new Benefits("B103","Ambulance charges upto 2000 covered");
-		Benefits b4 = new Benefits("B104","Ambulance charges upto 3000 covered");
-		Benefits b5 = new Benefits("B105","Ambulance charges upto 4000 covered");
-		Benefits b6 = new Benefits("B106","Hospitalization charges for Premium Twin Sharing room covered");
-		Benefits b7 = new Benefits("B107","Hospitalization charges for Deluxe room covered");
-		Benefits b8 = new Benefits("B108","Hospitalization charges for Premium Deluxe room covered");
+		Benefits b3 = new Benefits("B103","Ambulance charges upto 4000 covered");
+		Benefits b4 = new Benefits("B104","Day care Expenses covered");
+		Benefits b5 = new Benefits("B105","Medical Epenses covered");
+		Benefits b6 = new Benefits("B106","Pre and Post Hospitalization charges for Premium Twin Sharing room covered");
+		Benefits b7 = new Benefits("B107","Pre and Post Hospitalization charges for Deluxe room covered");
+		Benefits b8 = new Benefits("B108","Pre and Post Hospitalization charges for Premium Deluxe room covered");
 		
 		policy1.getBenefits().add(b1);
 		policy1.getBenefits().add(b2);
