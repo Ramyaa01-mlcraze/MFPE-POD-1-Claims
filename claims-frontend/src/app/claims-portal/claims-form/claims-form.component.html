@@ -46,16 +46,12 @@
               placeholder="Enter claim id"
               name="claimID"
               ngModel
-              required maxlength="5" minlength="4"
+              required 
               #claimID="ngModel"
             />
             <span *ngIf="!claimID.valid && claimID.touched" style="color: red"
               >Please enter Claim ID.</span
             >
-            <span *ngIf="claimID.errors?.['maxlength']" style="color: red"
-              > Claim ID must be atmost a length of 4 characters.</span>
-              <span *ngIf="claimID.errors?.['minlength']" style="color: red"
-              > Claim ID must be a length of 4 characters.</span>
               
           </div>
   
