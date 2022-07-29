@@ -17,9 +17,11 @@ import com.policy.microservice.repository.MemberPolicyRepo;
 import com.policy.microservice.repository.PolicyRepo;
 
 import lombok.extern.slf4j.Slf4j;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
 @ComponentScan(basePackages = "com.policy.microservice")
+@EnableSwagger2
 @EnableFeignClients
 @Slf4j
 public class PolicyMicroserviceApplication implements CommandLineRunner{
